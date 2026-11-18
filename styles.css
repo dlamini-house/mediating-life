@@ -33,3 +33,19 @@ html{scroll-padding-top:calc(var(--header-height) + 24px)}
  header .brand>span:not(.brand-logo){display:none}
  .footer-grid .brand-logo{width:260px;height:240px}
 }
+
+/* Mobile portrait: place the name panel BELOW the image, never over it. */
+@media (max-width: 640px) {
+  .portrait img {
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  .portrait-caption {
+    position: static;
+    inset: auto;
+    width: auto;
+    margin: 16px 0 20px;
+  }
+}
